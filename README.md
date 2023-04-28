@@ -1,5 +1,8 @@
 # docker-{DISTRO}-systemd
 
+[![CI](https://github.com/trfore/docker-image/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/trfore/docker-image/actions/workflows/ci.yml)
+[![CD](https://github.com/trfore/docker-image/actions/workflows/cd.yml/badge.svg?branch=main)](https://github.com/trfore/docker-image/actions/workflows/cd.yml)
+
 A minimal systemd enabled {DISTRO} Docker image for testing Ansible roles with Molecule.
 
 NOTE: This image does NOT contain Ansible tooling, e.g. `ansible-core` or `yamllint`. Thus, the use case is as target host for Ansible controllers or within the Molecule `create`/`converge`/`test` cycle.
