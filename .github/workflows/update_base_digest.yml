@@ -2,8 +2,8 @@ name: Check & Update Base OS Digest
 on:
   workflow_call:
     secrets:
-    TOKEN: # ex: ${{ secrets.PAT }} See peter-evans/create-pull-request docs for permissions
-      required: true
+      TOKEN: # ex: ${{ secrets.PAT }} See peter-evans/create-pull-request docs for permissions
+        required: true
 
 jobs:
   update_digest:
