@@ -4,6 +4,7 @@ on:
     inputs:
       PLATFORMS: # ex: linux/amd64
         required: true
+        type: string
     secrets:
       USERNAME: # ex: ${{ secrets.DOCKERHUB_USERNAME }}
         required: true
