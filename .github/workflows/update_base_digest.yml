@@ -1,9 +1,6 @@
 name: Check & Update Base OS Digest
 on:
   workflow_call:
-    secrets:
-      TOKEN: # ex: ${{ secrets.PAT }} See peter-evans/create-pull-request docs for permissions
-        required: true
 
 jobs:
   update_digest:
@@ -38,7 +35,6 @@ jobs:
         if: env.CURRENT_BASE_LAYER != env.LATEST_BASE_LAYER
         uses: peter-evans/create-pull-request@v5
         with:
-          token: ${{ secrets.TOKEN }}
           commit-message: update base os digest to ${{ env.LATEST_BASE_DIGEST_ABBR }}
           title: update base os digest to ${{ env.LATEST_BASE_DIGEST_ABBR }}
           body: |
