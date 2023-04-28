@@ -1,7 +1,7 @@
 name: Deploy to Docker Hub
 on:
   workflow_call:
-    items:
+    inputs:
       PLATFORMS: # ex: linux/amd64
         required: true
     secrets:
@@ -57,7 +57,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          platforms: ${{ item.PLATFORMS }}
+          platforms: ${{ inputs.PLATFORMS }}
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
