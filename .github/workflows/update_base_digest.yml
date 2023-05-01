@@ -1,4 +1,4 @@
-name: Check & Update Base OS Digest
+name: Update Base OS Digest
 on:
   workflow_call:
     secrets:
