@@ -59,7 +59,7 @@ jobs:
         with:
           context: .
           platforms: ${{ inputs.PLATFORMS }}
-          push: ${{ github.event_name != 'pull_request' }}
+          push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
