@@ -28,7 +28,7 @@ jobs:
           echo "LATEST_BASE_DIGEST_ABBR="$(jq -nr "$LATEST_BASE_DIGEST | .baseos.digest" | cut -c 1-19)"" >> $GITHUB_ENV
           echo "LATEST_BASE_LAYER="$LATEST_BASE_LAYER"" >> $GITHUB_ENV
           echo "CURRENT_BASE_LAYER="$CURRENT_BASE_LAYER"" >> $GITHUB_ENV
-           
+
           # update 'baseos_digest' file
           if [ "$CURRENT_BASE_LAYER" != "$LATEST_BASE_LAYER" ]; \
           then echo $LATEST_BASE_DIGEST > baseos_digest; \
@@ -42,7 +42,7 @@ jobs:
           commit-message: update base os digest to ${{ env.LATEST_BASE_DIGEST_ABBR }}
           title: update base os digest to ${{ env.LATEST_BASE_DIGEST_ABBR }}
           body: |
-            Updates base os image to: 
+            Updates base os image to:
 
             ${{ env.LATEST_BASE_DIGEST }}
 

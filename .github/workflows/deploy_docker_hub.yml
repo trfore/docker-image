@@ -38,7 +38,7 @@ jobs:
           labels: |
             org.opencontainers.image.created=${{ env.BUILD_DATE }}
             org.opencontainers.image.source=${{ github.event.repository.html_url }}
-            org.opencontainers.image.title=${{ github.repository }} 
+            org.opencontainers.image.title=${{ github.repository }}
             org.opencontainers.image.base.digest=${{ env.BASEOS_DIGEST }}
             org.opencontainers.image.base.name=${{ env.BASEOS_NAME }}
 
