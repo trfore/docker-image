@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out codebase
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Pull the latest image digest
         id: base_digest
