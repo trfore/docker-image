@@ -36,7 +36,7 @@ jobs:
 
       - name: Create pull request
         if: env.CURRENT_BASE_LAYER != env.LATEST_BASE_LAYER
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.TOKEN }}
           commit-message: update base os digest to ${{ env.LATEST_BASE_DIGEST_ABBR }}
