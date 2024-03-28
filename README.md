@@ -42,17 +42,28 @@ platforms:
     pre_build_image: true
 ```
 
-### Interactively
+### Interactively Using Docker
 
 1. Install [docker]
 2. Build an image locally (see above) or pull from Docker Hub: `docker pull trfore/docker-{DISTRO}-systemd:latest`
 3. Run a container from the image:
+
 ```sh
 docker run -d -it --name {DISTRO}-systemd --privileged --cgroupns=host --tmpfs=/run --tmpfs=/tmp --volume=/sys/fs/cgroup:/sys/fs/cgroup:rw trfore/docker-{DISTRO}-systemd:latest
 ```
+
 4. Use it, example:
+
 ```sh
 docker exec -it {DISTRO}-systemd /bin/bash
+```
+
+### Using Podman
+
+- Podman defaults to running containers in systemd mode, `--systemd=true`, and will mount the required tmpfs and cgroup filesystem. See [Podman Docs: Commands `run --systemd`] for details.
+
+```sh
+podman run -d -it --name {DISTRO}-systemd docker.io/trfore/docker-{DISTRO}-systemd:latest
 ```
 
 ## Additional Images
@@ -106,3 +117,4 @@ Inspired by Jeff Geerling's ([@geerlingguy](https://github.com/geerlingguy)), Ce
 [trfore/docker-ubuntu2404-systemd]: https://hub.docker.com/r/trfore/docker-ubuntu2404-systemd
 [github runner - ubuntu 20.04]: https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2004-Readme.md
 [github runner - ubuntu 22.04]: https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2204-Readme.md
+[Podman Docs: Commands `run --systemd`]: https://docs.podman.io/en/latest/markdown/podman-run.1.html#systemd-true-false-always
