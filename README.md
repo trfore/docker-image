@@ -115,6 +115,6 @@ Inspired by Jeff Geerling's ([@geerlingguy](https://github.com/geerlingguy)), Ce
 [trfore/docker-ubuntu2004-systemd]: https://hub.docker.com/r/trfore/docker-ubuntu2004-systemd
 [trfore/docker-ubuntu2204-systemd]: https://hub.docker.com/r/trfore/docker-ubuntu2204-systemd
 [trfore/docker-ubuntu2404-systemd]: https://hub.docker.com/r/trfore/docker-ubuntu2404-systemd
-[github runner - ubuntu 20.04]: https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2004-Readme.md
-[github runner - ubuntu 22.04]: https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2204-Readme.md
+[github runner - ubuntu 20.04]: https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2004-Readme.md
+[github runner - ubuntu 22.04]: https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md
 [Podman Docs: Commands `run --systemd`]: https://docs.podman.io/en/latest/markdown/podman-run.1.html#systemd-true-false-always
