@@ -64,3 +64,15 @@ jobs:
 
       - name: Test systemctl
         run: docker exec --tty test-container env TERM=xterm systemctl --version
+
+  all_green:
+    needs:
+      - test-cgroup-v1
+      - test-cgroup-v2
+    runs-on: ubuntu-latest
+    steps:
+      - run: >-
+          python -c "assert set([
+          '${{ needs.test-cgroup-v1.result }}',
+          '${{ needs.test-cgroup-v2.result }}'
+          ]) == {'success'}"
