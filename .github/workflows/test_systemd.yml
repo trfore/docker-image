@@ -65,7 +65,7 @@ jobs:
       - name: Test systemctl
         run: docker exec --tty test-container env TERM=xterm systemctl --version
 
-  all_green:
+  check:
     needs:
       - test-cgroup-v1
       - test-cgroup-v2
