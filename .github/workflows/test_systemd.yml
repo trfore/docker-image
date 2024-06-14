@@ -29,7 +29,7 @@ jobs:
           test-image
 
       - name: Check if container is running
-        run: timeout 20s bash -c 'until [ "$(docker inspect -f {{.State.Running}} test-container)" == "true" ]; do sleep 2; done'
+        run: timeout 60s bash -c 'until [ "$(docker inspect -f {{.State.Running}} test-container)" == "true" ]; do sleep 2; done'
 
       - name: Test systemctl
         run: docker exec --tty test-container env TERM=xterm systemctl --version
