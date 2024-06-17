@@ -1,12 +1,20 @@
 name: CI
 on:
-  workflow_dispatch:
   push:
-    branches: [main]
+    branches: ["*"]
     paths:
-      - 'Dockerfile'
+      - "Dockerfile"
   pull_request:
+    branches: ["*"]
+    paths-ignore:
+      - "**.md"
+      - "LICENSE"
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow}}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  test_build:
+  test:
     uses: trfore/docker-image/.github/workflows/test_systemd.yml@main # remote repo
