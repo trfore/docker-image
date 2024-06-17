@@ -3,7 +3,7 @@ on:
   workflow_call:
 
 jobs:
-  test-cgroup-v1:
+  cgroup-v1:
     runs-on: ubuntu-20.04
     steps:
       - name: Check out codebase
@@ -34,7 +34,7 @@ jobs:
       - name: Test systemctl
         run: docker exec --tty test-container env TERM=xterm systemctl --version
 
-  test-cgroup-v2:
+  cgroup-v2:
     runs-on: ubuntu-22.04
     steps:
       - name: Check out codebase
@@ -66,13 +66,14 @@ jobs:
         run: docker exec --tty test-container env TERM=xterm systemctl --version
 
   check:
+    if: ${{ always() }}
     needs:
-      - test-cgroup-v1
-      - test-cgroup-v2
+      - cgroup-v1
+      - cgroup-v2
     runs-on: ubuntu-latest
     steps:
       - run: >-
           python -c "assert set([
-          '${{ needs.test-cgroup-v1.result }}',
-          '${{ needs.test-cgroup-v2.result }}'
+          '${{ needs.cgroup-v1.result }}',
+          '${{ needs.cgroup-v2.result }}'
           ]) == {'success'}"
