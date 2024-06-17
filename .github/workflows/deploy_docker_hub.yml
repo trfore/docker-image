@@ -55,7 +55,7 @@ jobs:
             org.opencontainers.image.base.name=${{ env.BASEOS_NAME }}
 
       - name: Build and push image
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
           build-args: |
             BASEOS_DIGEST=${{ env.BASEOS_DIGEST }}
