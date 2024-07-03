@@ -37,7 +37,7 @@ jobs:
       - name: Create a test container
         run: >-
           docker run --name test-container --detach --privileged
-          --volume /sys/fs/cgroup:/sys/fs/cgroup:${{ inputs.volume_permission }}
+          --volume /sys/fs/cgroup:/sys/fs/cgroup:${{ inputs.volume-permission }}
           --tmpfs /run --tmpfs /tmp
           --cgroupns host
           test-image
