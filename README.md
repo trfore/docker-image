@@ -63,7 +63,7 @@ or merged to the `main` branch. But if you need to build the image on your own l
   docker run -d -it --name {DISTRO}-systemd --privileged --cgroupns=host --tmpfs=/run --tmpfs=/tmp --volume=/sys/fs/cgroup:/sys/fs/cgroup:rw trfore/docker-{DISTRO}-systemd:latest
   ```
 
-- Try it out:
+- Use it, example:
 
   ```sh
   docker exec -it {DISTRO}-systemd /bin/bash
