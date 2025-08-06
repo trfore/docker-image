@@ -88,6 +88,8 @@ or merged to the `main` branch. But if you need to build the image on your own l
 | [Debian 11][debian]              | [docker-debian11-systemd]   | [trfore/docker-debian11-systemd]   |
 | [Debian 12][debian]              | [docker-debian12-systemd]   | [trfore/docker-debian12-systemd]   |
 | [Fedora][fedora]                 | [docker-fedora40-systemd]   | [trfore/docker-fedora40-systemd]   |
+| [Rocky9][rocky]                  | [docker-rocky9-systemd]     | [makanu/docker-rocky9-systemd]     |
+| [Rocky10][rocky]                 | [docker-rocky10-systemd]    | [makanu/docker-rocky10-systemd]    |
 | [Ubuntu 20.04][ubuntu]           | [docker-ubuntu2004-systemd] | [trfore/docker-ubuntu2004-systemd] |
 | [Ubuntu 22.04][ubuntu]           | [docker-ubuntu2204-systemd] | [trfore/docker-ubuntu2204-systemd] |
 | [Ubuntu 24.04][ubuntu]           | [docker-ubuntu2404-systemd] | [trfore/docker-ubuntu2404-systemd] |
@@ -96,10 +98,27 @@ or merged to the `main` branch. But if you need to build the image on your own l
 
 Taylor Fore (<https://github.com/trfore>)
 
+## Contributing
+
+If you want to use this template to create a new distro, apply the following secrets to github actions:
+
+- DOCKERHUB_USERNAME
+- DOCKERHUB_TOKEN
+    - Account Settings > Personal Access Tokens
+    - With "Read,Write,Delete"
+- AUTO_PR_TOKEN
+    - [Personal Access Tokens](https://github.com/settings/personal-access-tokens)
+    - Only select repositories
+      - select your repositories, which should have access
+    - Permissions (Repositories)
+      - Contents: Read and write
+      - Pull requests: Read and write
+
 ## Acknowledgements
 
 Inspired by Jeff Geerling's ([@geerlingguy](https://github.com/geerlingguy)), CentOS 8, Debian 10/11, and Ubuntu 20/22
 docker images for ansible, [geerlingguy/docker-\*-ansible](https://github.com/geerlingguy?tab=repositories&q=docker-ansible).
+This Template is based on [trfore/docker-image](https://github.com/trfore/docker-image)
 
 ## References
 
@@ -113,6 +132,7 @@ docker images for ansible, [geerlingguy/docker-\*-ansible](https://github.com/ge
 [debian]: https://hub.docker.com/_/debian/
 [fedora]: https://quay.io/repository/fedora/fedora?tab=tags
 [docker]: https://docs.docker.com/engine/installation/
+[rocky]: https://hub.docker.com/_/rockylinux
 [ubuntu]: https://hub.docker.com/_/ubuntu/
 [docker-centos8-systemd]: https://github.com/trfore/docker-centos8-systemd/blob/main/Dockerfile
 [docker-centos9-systemd]: https://github.com/trfore/docker-centos9-systemd/blob/main/Dockerfile
@@ -120,6 +140,8 @@ docker images for ansible, [geerlingguy/docker-\*-ansible](https://github.com/ge
 [docker-debian11-systemd]: https://github.com/trfore/docker-debian11-systemd/blob/main/Dockerfile
 [docker-debian12-systemd]: https://github.com/trfore/docker-debian12-systemd/blob/main/Dockerfile
 [docker-fedora40-systemd]: https://github.com/trfore/docker-fedora40-systemd/blob/main/Dockerfile
+[docker-rocky9-systemd]: https://github.com/makanu/docker-rocky9-systemd/blob/main/Dockerfile
+[docker-rocky10-systemd]: https://github.com/makanu/docker-rocky10-systemd/blob/main/Dockerfile
 [docker-ubuntu2004-systemd]: https://github.com/trfore/docker-ubuntu2004-systemd/blob/main/Dockerfile
 [docker-ubuntu2204-systemd]: https://github.com/trfore/docker-ubuntu2204-systemd/blob/main/Dockerfile
 [docker-ubuntu2404-systemd]: https://github.com/trfore/docker-ubuntu2404-systemd/blob/main/Dockerfile
@@ -129,6 +151,8 @@ docker images for ansible, [geerlingguy/docker-\*-ansible](https://github.com/ge
 [trfore/docker-debian11-systemd]: https://hub.docker.com/r/trfore/docker-debian11-systemd
 [trfore/docker-debian12-systemd]: https://hub.docker.com/r/trfore/docker-debian12-systemd
 [trfore/docker-fedora40-systemd]: https://hub.docker.com/r/trfore/docker-fedora40-systemd
+[makanu/docker-rocky9-systemd]: https://hub.docker.com/r/makanu/docker-rocky9-systemd
+[makanu/docker-rocky10-systemd]: https://hub.docker.com/r/makanu/docker-rocky10-systemd
 [trfore/docker-ubuntu2004-systemd]: https://hub.docker.com/r/trfore/docker-ubuntu2004-systemd
 [trfore/docker-ubuntu2204-systemd]: https://hub.docker.com/r/trfore/docker-ubuntu2204-systemd
 [trfore/docker-ubuntu2404-systemd]: https://hub.docker.com/r/trfore/docker-ubuntu2404-systemd
