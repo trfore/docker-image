@@ -118,7 +118,6 @@ If you want to use this template to create a new distro, apply the following sec
 
 Inspired by Jeff Geerling's ([@geerlingguy](https://github.com/geerlingguy)), CentOS 8, Debian 10/11, and Ubuntu 20/22
 docker images for ansible, [geerlingguy/docker-\*-ansible](https://github.com/geerlingguy?tab=repositories&q=docker-ansible).
-This Template is based on [trfore/docker-image](https://github.com/trfore/docker-image)
 
 ## References
 
