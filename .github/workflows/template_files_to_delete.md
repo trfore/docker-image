@@ -1,6 +1,6 @@
 # Files to Delete
 
-The following files can be sourced from the template repository (trfore/docker-image) and safely deleted:
+The following files can be sourced from the template repository (trfore-com/docker-image) and safely deleted:
 
 - deploy_docker_hub.yml
 - update_base_digest.yml
