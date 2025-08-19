@@ -1,7 +1,7 @@
 # docker-{DISTRO}-systemd
 
-[![CI](https://github.com/trfore-com/docker-image/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/trfore-com/docker-image/actions/workflows/ci.yml)
-[![CD](https://github.com/trfore-com/docker-image/actions/workflows/cd.yml/badge.svg?branch=main)](https://github.com/trfore-com/docker-image/actions/workflows/cd.yml)
+[![CI](https://github.com/trfore/docker-image/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/trfore/docker-image/actions/workflows/ci.yml)
+[![CD](https://github.com/trfore/docker-image/actions/workflows/cd.yml/badge.svg?branch=main)](https://github.com/trfore/docker-image/actions/workflows/cd.yml)
 
 A minimal systemd enabled {DISTRO} Docker image for testing Ansible roles with Molecule.
 
@@ -23,7 +23,7 @@ or merged to the `main` branch. But if you need to build the image on your own l
 2. Clone the repo
 
    ```sh
-   git clone https://github.com/trfore-com/docker-{DISTRO}-systemd.git
+   git clone https://github.com/trfore/docker-{DISTRO}-systemd.git
    ```
 
 3. `cd` into the directory
@@ -116,16 +116,16 @@ docker images for ansible, [geerlingguy/docker-\*-ansible](https://github.com/ge
 [fedora]: https://quay.io/repository/fedora/fedora?tab=tags
 [docker]: https://docs.docker.com/engine/installation/
 [ubuntu]: https://hub.docker.com/_/ubuntu/
-[docker-centos8-systemd]: https://github.com/trfore-com/docker-centos8-systemd/blob/main/Dockerfile
-[docker-centos9-systemd]: https://github.com/trfore-com/docker-centos9-systemd/blob/main/Dockerfile
-[docker-debian10-systemd]: https://github.com/trfore-com/docker-debian10-systemd/blob/main/Dockerfile
-[docker-debian11-systemd]: https://github.com/trfore-com/docker-debian11-systemd/blob/main/Dockerfile
-[docker-debian12-systemd]: https://github.com/trfore-com/docker-debian12-systemd/blob/main/Dockerfile
-[docker-debian13-systemd]: https://github.com/trfore-com/docker-debian13-systemd/blob/main/Dockerfile
-[docker-fedora40-systemd]: https://github.com/trfore-com/docker-fedora40-systemd/blob/main/Dockerfile
-[docker-ubuntu2004-systemd]: https://github.com/trfore-com/docker-ubuntu2004-systemd/blob/main/Dockerfile
-[docker-ubuntu2204-systemd]: https://github.com/trfore-com/docker-ubuntu2204-systemd/blob/main/Dockerfile
-[docker-ubuntu2404-systemd]: https://github.com/trfore-com/docker-ubuntu2404-systemd/blob/main/Dockerfile
+[docker-centos8-systemd]: https://github.com/trfore/docker-centos8-systemd/blob/main/Dockerfile
+[docker-centos9-systemd]: https://github.com/trfore/docker-centos9-systemd/blob/main/Dockerfile
+[docker-debian10-systemd]: https://github.com/trfore/docker-debian10-systemd/blob/main/Dockerfile
+[docker-debian11-systemd]: https://github.com/trfore/docker-debian11-systemd/blob/main/Dockerfile
+[docker-debian12-systemd]: https://github.com/trfore/docker-debian12-systemd/blob/main/Dockerfile
+[docker-debian13-systemd]: https://github.com/trfore/docker-debian13-systemd/blob/main/Dockerfile
+[docker-fedora40-systemd]: https://github.com/trfore/docker-fedora40-systemd/blob/main/Dockerfile
+[docker-ubuntu2004-systemd]: https://github.com/trfore/docker-ubuntu2004-systemd/blob/main/Dockerfile
+[docker-ubuntu2204-systemd]: https://github.com/trfore/docker-ubuntu2204-systemd/blob/main/Dockerfile
+[docker-ubuntu2404-systemd]: https://github.com/trfore/docker-ubuntu2404-systemd/blob/main/Dockerfile
 [trfore/docker-centos8-systemd]: https://hub.docker.com/r/trfore/docker-centos8-systemd
 [trfore/docker-centos9-systemd]: https://hub.docker.com/r/trfore/docker-centos9-systemd
 [trfore/docker-debian10-systemd]: https://hub.docker.com/r/trfore/docker-debian10-systemd

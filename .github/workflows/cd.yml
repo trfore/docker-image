@@ -17,7 +17,7 @@ on:
 jobs:
   deploy:
     if: ${{ github.event.pull_request.merged == true || inputs.manual_deploy == true }}
-    uses: trfore-com/docker-image/.github/workflows/deploy_docker_hub.yml@main # remote repo
+    uses: trfore/docker-image/.github/workflows/deploy_docker_hub.yml@main # remote repo
     with:
       PLATFORMS: "linux/amd64"
     secrets:
