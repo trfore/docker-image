@@ -6,6 +6,6 @@ on:
 
 jobs:
   update:
-    uses: trfore/docker-image/.github/workflows/update_base_digest.yml@main # remote repo
+    uses: trfore-com/docker-image/.github/workflows/update_base_digest.yml@main # remote repo
     secrets:
       TOKEN: ${{ secrets.AUTO_PR_TOKEN }}
