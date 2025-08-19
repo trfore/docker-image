@@ -12,4 +12,4 @@ The following files can be sourced from the template repository (trfore/docker-i
 rm deploy_docker_hub.yml update_base_digest.yml test_systemd.yml template_files_to_delete.md
 ```
 
-- <https://github.com/trfore/docker-image>
+- <https://github.com/trfore-com/docker-image>
