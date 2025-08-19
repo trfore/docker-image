@@ -108,8 +108,8 @@ docker images for ansible, [geerlingguy/docker-\*-ansible](https://github.com/ge
 - <https://molecule.readthedocs.io/en/stable/index.html>
 - <https://molecule.readthedocs.io/en/stable/examples.html#systemd-container>
 - <https://developers.redhat.com/blog/2016/09/13/running-systemd-in-a-non-privileged-container>
-- [github runner - ubuntu 20.04] preinstalled software
 - [github runner - ubuntu 22.04] preinstalled software
+- [github runner - ubuntu 24.04] preinstalled software
 
 [centos-stream]: https://quay.io/repository/centos/centos?tab=tags
 [debian]: https://hub.docker.com/_/debian/
@@ -136,6 +136,6 @@ docker images for ansible, [geerlingguy/docker-\*-ansible](https://github.com/ge
 [trfore/docker-ubuntu2004-systemd]: https://hub.docker.com/r/trfore/docker-ubuntu2004-systemd
 [trfore/docker-ubuntu2204-systemd]: https://hub.docker.com/r/trfore/docker-ubuntu2204-systemd
 [trfore/docker-ubuntu2404-systemd]: https://hub.docker.com/r/trfore/docker-ubuntu2404-systemd
-[github runner - ubuntu 20.04]: https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2004-Readme.md
 [github runner - ubuntu 22.04]: https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md
+[github runner - ubuntu 24.04]: https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md
 [Podman Docs: Commands `run --systemd`]: https://docs.podman.io/en/latest/markdown/podman-run.1.html#systemd-true-false-always
