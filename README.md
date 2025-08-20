@@ -105,8 +105,8 @@ docker images for ansible, [geerlingguy/docker-\*-ansible](https://github.com/ge
 
 ## References
 
-- <https://molecule.readthedocs.io/en/stable/index.html>
-- <https://molecule.readthedocs.io/en/stable/examples.html#systemd-container>
+- <https://ansible.readthedocs.io/projects/molecule/>
+- <https://ansible.readthedocs.io/projects/molecule/guides/systemd-container/>
 - <https://developers.redhat.com/blog/2016/09/13/running-systemd-in-a-non-privileged-container>
 - [github runner - ubuntu 22.04] preinstalled software
 - [github runner - ubuntu 24.04] preinstalled software
